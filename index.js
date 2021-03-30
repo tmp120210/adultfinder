@@ -3,93 +3,79 @@ const _ = require("underscore")
 const fs = require('fs');
 const { Console } = require("console");
 
-function unique(array){
-  const result = [];
-
-  for (let org of array){
-    if(!result.includes(org)){
-      result.push(org)
-    }
+const resData = {
+  url: "https://4563a979508a4f50a6f6a0f8332a3293.eu-west-1.aws.found.io:9243",
+  headers: {
+    "Content-Type": "application/json",
+    "Authorization": "Basic ZWxhc3RpYzpFRkUwNHhkQmFwNzFVY3Y5aldXaHRwSlY="
   }
+} 
 
-  return result;
-
-}
+const callingCode = "+1"
 
 async function getOrganizationsArray(){
-      ////////  GET ORGANIZATIONS COUNT ////////
-
-      let countRes = await fetch("https://i-o-optimized-deployment-b8eb6b.es.eu-west-1.aws.found.io:9243/organizations/_count", {
+  
+  let countRes = await fetch(`${resData.url}/companies/_count`, {
         "method": "POST",
-        "headers": {
-          "Content-Type": "application/json",
-          "Authorization": "Basic ZWxhc3RpYzpXWm5xUmxDd2ptS2lRZURXSlRiSk01UEQ="
-        },
-        "body": `{"query":{"match":{"keywords":"software"}}}`
+        "headers": resData.headers,
+        "body": `{"query":{"match":{"organization_keywords":"software"}}}`
       })
       let jsonCount = await countRes.json();
       let count = jsonCount.count
-  
-      ////////////////
+      console.log("ORG COUNT: ", count)
+
      
       const organizations = [];
       var json;
       var hits;
-/////// REQUEST FOR COUNT > 100000  ////      
       if(count >= 10000){
-      ///// INIT SCROLL REQUEST ////
+
         let options ={
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: "Basic ZWxhc3RpYzpXWm5xUmxDd2ptS2lRZURXSlRiSk01UEQ="
-          },
-          "body": `{"size": "10000", "_source":["name"],"query":{"match":{"keywords":"software"}}}`
+          headers: resData.headers,
+          "body": `{"size": "10000", "_source":["organization_name"],"query":{"match":{"organization_keywords":"software"}}}`
         }
-          let response = await fetch("https://i-o-optimized-deployment-b8eb6b.es.eu-west-1.aws.found.io:9243/organizations/_search?scroll=1m", options)
+          let response = await fetch(`${resData.url}/companies/_search?scroll=1m`, options)
           json = await response.json()
           hits = json.hits.hits
-          hits.map(elem => organizations.push(elem._source.name))
+          hits.map(elem => organizations.push(elem._source.organization_name))
           let scrollId = json._scroll_id
 
-      ///////////////////////////////
+
 
         while (count > 10000){
-        ///// GET NEXT SCROLL //////
+
         
           options.body = `{"scroll": "1m", "scroll_id": "${scrollId}"}`
-          response = await fetch("https://i-o-optimized-deployment-b8eb6b.es.eu-west-1.aws.found.io:9243/_search/scroll", options)
+          response = await fetch(`${resData.url}/_search/scroll`, options)
           json = await response.json()
           crollId = json._scroll_id
           hits = json.hits.hits
-          hits.map(elem => organizations.push(elem._source.name))
+          hits.map(elem => organizations.push(elem._source.organization_name))
 
-        ///////////////////////////  
           count -= 10000;
         }
         options.body = `{"scroll": "1m", "scroll_id": "${scrollId}"}`
-          response = await fetch("https://i-o-optimized-deployment-b8eb6b.es.eu-west-1.aws.found.io:9243/_search/scroll", options)
+          response = await fetch(`${resData.url}/_search/scroll`, options)
           json = await response.json()
           hits = json.hits.hits
-          hits.map(elem => organizations.push(elem._source.name))
+          hits.map(elem => organizations.push(elem._source.organization_name))
       }
-////////////////////////
+
 
       else{
         let options ={
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: "Basic ZWxhc3RpYzpXWm5xUmxDd2ptS2lRZURXSlRiSk01UEQ="
-          },
-          "body": `{"size": "${count}", "_source":["name"],"query":{"match":{"keywords":"software"}}}`
+          headers: resData.headers,
+          "body": `{"size": "${count}", "_source":["organization_name"],"query":{"match":{"organization_keywords":"software"}}}`
         }
-        response = await fetch("https://i-o-optimized-deployment-b8eb6b.es.eu-west-1.aws.found.io:9243/organizations/_search", options)
+        response = await fetch(`${resData.url}/companies/_search`, options)
         json = await response.json()
         hits = json.hits.hits
-        hits.map(elem => organizations.push(elem._source.name))
+        hits.map(elem => console.log(elem._source))
+        hits.map(elem => organizations.push(elem._source.organization_name))
       }
-      return unique(organizations)
+      return _.uniq(organizations)
 }
 
 
@@ -97,18 +83,15 @@ async function loadCityToCSV(city) {
 
   console.log("fetch results from the elastic for", city)
   let uniqOrganizations = await getOrganizationsArray();
-  console.log(uniqOrganizations.length)
+  console.log("Uniq organizations: ", uniqOrganizations.length)
   const mails = [];
   for(let i = 0; i <= uniqOrganizations.length; i++){
     try{
 
-      let countRes = await fetch("https://i-o-optimized-deployment-b8eb6b.es.eu-west-1.aws.found.io:9243/profiles/_search", {
+      let countRes = await fetch(`${resData.url}/profiles/_search`, {
       "method": "POST",
-      "headers": {
-        "Content-Type": "application/json",
-        "Authorization": "Basic ZWxhc3RpYzpXWm5xUmxDd2ptS2lRZURXSlRiSk01UEQ="
-      },
-      "body": `{"query\":{"bool":{"must":[{"terms":{"title":["cmo","cto\","ceo","cio","product manager","program manager","it director","project manager","founder","cofounder"]}},{"match_phrase":{"organization":"${uniqOrganizations[i]}"}}]}}}`
+      "headers": resData.headers,
+      "body": `{"query":{"bool":{"must":[{"terms":{"title":["cmo","cto","ceo","cio","product manager","program manager","it director","project manager","founder","cofounder"]}},{"match_phrase":{"organization":"${uniqOrganizations[i]}"}}]}}}`
   
       })
       let jsonCount = await countRes.json();
@@ -135,14 +118,25 @@ async function loadCityToCSV(city) {
         let fn = hit.name.split(' ').shift()
         let ln = hit.name.replace(',', '').split(' ').slice(1).join(' ')
         let ct = hit.city
+        let pos = hit.title
+        let organization = hit.organization
         let country = hit.country
         let value = _hit._score
 
         if(mails.includes(email1)){
 
-        }else if(phone1){
+        }else if(phone1 && country === "United States"){
           mails.push(email1)
-          fs.appendFileSync('audience.csv', `${email1},${email2},${email3},${phone1},${phone2},${phone3},${fn},${ln},${ct},${country},${value}` + `\n`);
+          if(!phone1.includes("+")){
+            phone1 = callingCode + phone1
+          }
+          if(phone2 && !phone2.includes("+")){
+            phone2 = callingCode + phone2
+          }
+          if(phone3 && !phone3.includes("+")){
+            phone3 = callingCode + phone3
+          }
+          fs.appendFileSync('newAudience.csv', `${email1}\t${email2}\t${email3}\t${phone1}\t${phone2}\t${phone3}\t${fn}\t${ln}\t${pos}\t${organization}\t${ct}\t${country}` + `\n`);
         }
 
         
@@ -160,9 +154,9 @@ async function loadCityToCSV(city) {
 }
 
 
-if (!fs.existsSync('audience.csv')) {
-  let fbHeader = 'email,email,email,phone,phone,phone,fn,ln,ct,st,country,value\n'
-  fs.appendFileSync('audience.csv', fbHeader);
+if (!fs.existsSync('newAudience.csv')) {
+  let fbHeader = 'email\temail\temail\tphone\tphone\tphone\tfn\tln\tposition\torganization\tct\tcountry\n'
+  fs.appendFileSync('newAudience.csv', fbHeader);
 }
 
 loadCityToCSV("Palo Alto")
