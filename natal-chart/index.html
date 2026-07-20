@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NOVA — натальная карта · 09.04.1986</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="sky" aria-hidden="true">
+    <canvas id="stars"></canvas>
+    <div class="aurora"></div>
+  </div>
+
+  <header class="hero">
+    <p class="brand">NOVA</p>
+    <h1>Натальная карта</h1>
+    <p class="lede">Женщина · 9 апреля 1986 — день новолуния и солнечного затмения в Овне</p>
+    <a class="cta" href="#chart">Смотреть карту</a>
+  </header>
+
+  <main>
+    <section id="chart" class="chart-section">
+      <div class="chart-wrap">
+        <svg id="wheel" viewBox="0 0 640 640" role="img" aria-label="Колесо натальной карты">
+          <defs>
+            <radialGradient id="disk" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#1a2a28" />
+              <stop offset="70%" stop-color="#0c1413" />
+              <stop offset="100%" stop-color="#070b0a" />
+            </radialGradient>
+            <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="2.5" result="b" />
+              <feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge>
+            </filter>
+          </defs>
+          <circle class="wheel-bg" cx="320" cy="320" r="300" fill="url(#disk)" />
+          <g id="zodiac-ring"></g>
+          <g id="aspects-layer"></g>
+          <g id="planets-layer"></g>
+          <circle cx="320" cy="320" r="58" fill="#0a1211" stroke="rgba(212,168,83,0.35)" stroke-width="1" />
+          <text x="320" y="314" text-anchor="middle" class="center-brand">NOVA</text>
+          <text x="320" y="336" text-anchor="middle" class="center-date">09.04.86</text>
+        </svg>
+      </div>
+      <p class="chart-note">Позиции на 12:00 UT. Без точного времени рождения Асцендент и дома не строятся; Луна может сместиться на несколько градусов.</p>
+    </section>
+
+    <section class="planets-section" id="planets">
+      <h2>Планеты в знаках</h2>
+      <p class="section-lede">Снимок неба в день рождения — основа характера и жизненного рисунка.</p>
+      <div class="planet-grid" id="planet-grid"></div>
+    </section>
+
+    <section class="aspects-section" id="aspects">
+      <h2>Ключевые аспекты</h2>
+      <p class="section-lede">Напряжения и гармонии между планетами — как энергия течёт в жизни.</p>
+      <ul class="aspect-list" id="aspect-list"></ul>
+    </section>
+
+    <section class="reading-section" id="reading">
+      <h2>Портрет</h2>
+      <p class="section-lede">Краткое чтение карты для женщины, рождённой 9 апреля 1986.</p>
+      <article class="reading">
+        <h3>Солнце ☌ Луна в Овне</h3>
+        <p>Рождение в новолуние и в день частичного солнечного затмения даёт сильный «стартовый» импульс: личность и эмоции слиты в одном огне. Это женщина, которая начинает, прорывает, не ждёт разрешения. Жизненные циклы часто идут волнами обновления — старое сгорает, появляется новое «я».</p>
+
+        <h3>Меркурий и Юпитер в Рыбах</h3>
+        <p>Мышление образное, интуитивное, сострадательное. Юпитер в Рыбах расширяет веру, творчество и эмпатию: ей важно чувствовать смысл, а не только цель. Речь может быть поэтичной; решения часто приходят «через тело» и сны, а не через сухую логику.</p>
+
+        <h3>Венера в Тельце</h3>
+        <p>В любви и красоте — потребность в тепле, стабильности, телесном присутствии. Притягательность спокойная и чувственная. Деньги и ценности воспринимаются как почва под ногами: ей важно, чтобы отношения и быт были надёжными.</p>
+
+        <h3>Марс ☌ Нептун в Козероге</h3>
+        <p>Воля дисциплинированная, но окрашена мечтой и идеалом. Действует стратегично, иногда жертвуя собой ради большой картины. Риск — размывание границ и усталость от «служения». Сила — воплощать видение в конкретные результаты.</p>
+
+        <h3>Сатурн и Уран в Стрельце (R)</h3>
+        <p>Поколенческий фон: свобода и структура спорят о смысле жизни. В личной карте Сатурн квадратом к Юпитеру учит зрелой вере — не обещать себе всё сразу, а строить путь. Трин Солнца/Луны к Урану добавляет внезапные озарения и потребность быть собой, даже если это ломает сценарий.</p>
+
+        <h3>Плутон в Скорпионе</h3>
+        <p>Глубинная способность к трансформации: кризисы не разрушают её окончательно — они переплавляют. Венера в оппозиции к Плутону обостряет тему власти в близости: любовь либо очень глубокая, либо её лучше не имитировать.</p>
+      </article>
+    </section>
+
+    <section class="meta-section">
+      <h2>Данные расчёта</h2>
+      <dl class="meta">
+        <div><dt>Дата</dt><dd>9 апреля 1986 (среда)</dd></div>
+        <div><dt>Время</dt><dd>не указано → принято 12:00 UT</dd></div>
+        <div><dt>Место</dt><dd>не указано → дома не рассчитаны</dd></div>
+        <div><dt>Зодиак</dt><dd>тропический</dd></div>
+        <div><dt>Особая метка</dt><dd>новолуние + солнечное затмение в Овне (~06:08–06:21 UT)</dd></div>
+      </dl>
+      <p class="fineprint">Для Асцендента, домов и точной Луны нужны время и город рождения.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span class="brand-sm">NOVA</span>
+    <span>Натальная карта · 09.04.1986</span>
+  </footer>
+
+  <script src="chart.js"></script>
+</body>
+</html>

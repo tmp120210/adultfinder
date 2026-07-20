@@ -1,0 +1,274 @@
+{
+  "birth": {
+    "date": "09.04.1986",
+    "dateIso": "1986-04-09",
+    "time": "12:00 UT (время неизвестно)",
+    "place": "место неизвестно",
+    "note": "Позиции планет на полдень UT. 09.04.1986 — новолуние и частичное солнечное затмение в Овне."
+  },
+  "planets": [
+    {
+      "id": "Sun",
+      "name": "Солнце",
+      "glyph": "☉",
+      "lon": 19.341,
+      "signIndex": 0,
+      "sign": "Овен",
+      "deg": 19,
+      "min": 20,
+      "text": "19°20′",
+      "retro": false
+    },
+    {
+      "id": "Moon",
+      "name": "Луна",
+      "glyph": "☽",
+      "lon": 22.0923,
+      "signIndex": 0,
+      "sign": "Овен",
+      "deg": 22,
+      "min": 6,
+      "text": "22°06′",
+      "retro": false
+    },
+    {
+      "id": "Mercury",
+      "name": "Меркурий",
+      "glyph": "☿",
+      "lon": 352.1626,
+      "signIndex": 11,
+      "sign": "Рыбы",
+      "deg": 22,
+      "min": 10,
+      "text": "22°10′",
+      "retro": false
+    },
+    {
+      "id": "Venus",
+      "name": "Венера",
+      "glyph": "♀",
+      "lon": 38.8131,
+      "signIndex": 1,
+      "sign": "Телец",
+      "deg": 8,
+      "min": 49,
+      "text": "8°49′",
+      "retro": false
+    },
+    {
+      "id": "Mars",
+      "name": "Марс",
+      "glyph": "♂",
+      "lon": 276.026,
+      "signIndex": 9,
+      "sign": "Козерог",
+      "deg": 6,
+      "min": 2,
+      "text": "6°02′",
+      "retro": false
+    },
+    {
+      "id": "Jupiter",
+      "name": "Юпитер",
+      "glyph": "♃",
+      "lon": 341.0515,
+      "signIndex": 11,
+      "sign": "Рыбы",
+      "deg": 11,
+      "min": 3,
+      "text": "11°03′",
+      "retro": false
+    },
+    {
+      "id": "Saturn",
+      "name": "Сатурн",
+      "glyph": "♄",
+      "lon": 249.3399,
+      "signIndex": 8,
+      "sign": "Стрелец",
+      "deg": 9,
+      "min": 20,
+      "text": "9°20′",
+      "retro": true
+    },
+    {
+      "id": "Uranus",
+      "name": "Уран",
+      "glyph": "♅",
+      "lon": 262.3007,
+      "signIndex": 8,
+      "sign": "Стрелец",
+      "deg": 22,
+      "min": 18,
+      "text": "22°18′",
+      "retro": true
+    },
+    {
+      "id": "Neptune",
+      "name": "Нептун",
+      "glyph": "♆",
+      "lon": 275.807,
+      "signIndex": 9,
+      "sign": "Козерог",
+      "deg": 5,
+      "min": 48,
+      "text": "5°48′",
+      "retro": true
+    },
+    {
+      "id": "Pluto",
+      "name": "Плутон",
+      "glyph": "♇",
+      "lon": 216.4455,
+      "signIndex": 7,
+      "sign": "Скорпион",
+      "deg": 6,
+      "min": 27,
+      "text": "6°27′",
+      "retro": true
+    },
+    {
+      "id": "Node",
+      "name": "Сев. узел",
+      "glyph": "☊",
+      "lon": 0.6167,
+      "signIndex": 0,
+      "sign": "Овен",
+      "deg": 0,
+      "min": 37,
+      "text": "0°37′",
+      "retro": true
+    },
+    {
+      "id": "Chiron",
+      "name": "Хирон",
+      "glyph": "⚷",
+      "lon": 70.85,
+      "signIndex": 2,
+      "sign": "Близнецы",
+      "deg": 10,
+      "min": 51,
+      "text": "10°51′",
+      "retro": false
+    }
+  ],
+  "aspects": [
+    {
+      "a": "Mercury",
+      "b": "Uranus",
+      "aName": "Меркурий",
+      "bName": "Уран",
+      "type": "квадрат",
+      "symbol": "□",
+      "orb": 0.1
+    },
+    {
+      "a": "Moon",
+      "b": "Uranus",
+      "aName": "Луна",
+      "bName": "Уран",
+      "type": "трин",
+      "symbol": "△",
+      "orb": 0.2
+    },
+    {
+      "a": "Mars",
+      "b": "Neptune",
+      "aName": "Марс",
+      "bName": "Нептун",
+      "type": "соединение",
+      "symbol": "☌",
+      "orb": 0.2
+    },
+    {
+      "a": "Mars",
+      "b": "Pluto",
+      "aName": "Марс",
+      "bName": "Плутон",
+      "type": "секстиль",
+      "symbol": "⚹",
+      "orb": 0.4
+    },
+    {
+      "a": "Neptune",
+      "b": "Pluto",
+      "aName": "Нептун",
+      "bName": "Плутон",
+      "type": "секстиль",
+      "symbol": "⚹",
+      "orb": 0.6
+    },
+    {
+      "a": "Jupiter",
+      "b": "Saturn",
+      "aName": "Юпитер",
+      "bName": "Сатурн",
+      "type": "квадрат",
+      "symbol": "□",
+      "orb": 1.7
+    },
+    {
+      "a": "Venus",
+      "b": "Jupiter",
+      "aName": "Венера",
+      "bName": "Юпитер",
+      "type": "секстиль",
+      "symbol": "⚹",
+      "orb": 2.2
+    },
+    {
+      "a": "Venus",
+      "b": "Pluto",
+      "aName": "Венера",
+      "bName": "Плутон",
+      "type": "оппозиция",
+      "symbol": "☍",
+      "orb": 2.4
+    },
+    {
+      "a": "Sun",
+      "b": "Moon",
+      "aName": "Солнце",
+      "bName": "Луна",
+      "type": "соединение",
+      "symbol": "☌",
+      "orb": 2.8
+    },
+    {
+      "a": "Venus",
+      "b": "Mars",
+      "aName": "Венера",
+      "bName": "Марс",
+      "type": "трин",
+      "symbol": "△",
+      "orb": 2.8
+    },
+    {
+      "a": "Sun",
+      "b": "Uranus",
+      "aName": "Солнце",
+      "bName": "Уран",
+      "type": "трин",
+      "symbol": "△",
+      "orb": 3
+    },
+    {
+      "a": "Venus",
+      "b": "Neptune",
+      "aName": "Венера",
+      "bName": "Нептун",
+      "type": "трин",
+      "symbol": "△",
+      "orb": 3
+    },
+    {
+      "a": "Jupiter",
+      "b": "Pluto",
+      "aName": "Юпитер",
+      "bName": "Плутон",
+      "type": "трин",
+      "symbol": "△",
+      "orb": 4.6
+    }
+  ]
+}

@@ -1,17 +1,15 @@
 {
-  "name": "rrfls5",
+  "name": "nova-natal-chart",
   "version": "1.0.0",
-  "description": "test",
-  "main": "index.js",
-  "dependencies": {
-    "fetch": "^1.1.0",
-    "node-fetch": "^2.6.1",
-    "r2": "^2.0.1",
-    "underscore": "^1.12.1"
-  },
-  "devDependencies": {},
+  "description": "Натальная карта женщины · 09.04.1986",
+  "main": "natal-chart/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "calc": "node scripts/calc-chart.js",
+    "start": "npx --yes serve natal-chart -l 4173",
+    "test": "node scripts/calc-chart.js"
+  },
+  "dependencies": {
+    "astronomy-engine": "^2.1.19"
   },
   "author": "",
   "license": "ISC"
