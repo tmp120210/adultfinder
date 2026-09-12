@@ -1,0 +1,312 @@
+{
+  "boletus-edulis": {
+    "name": "Boletus edulis",
+    "images": [
+      {
+        "file": "images/boletus-edulis-1.jpg",
+        "source_title": "File:(Boletus edulis).jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/20/%28Boletus_edulis%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "images/boletus-edulis-2.jpg",
+        "source_title": "File:(Gemeine Steinpilz) Boletus edulis.jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/%28Gemeine_Steinpilz%29_Boletus_edulis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY 3.0"
+      }
+    ]
+  },
+  "leccinum-aurantiacum": {
+    "name": "Leccinum aurantiacum",
+    "images": [
+      {
+        "file": "images/leccinum-aurantiacum-1.jpg",
+        "source_title": "File:0 Bolet orangé - Leccinum aurantiacum - Havré (1).JPG",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/0_Bolet_orang%C3%A9_-_Leccinum_aurantiacum_-_Havr%C3%A9_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY 3.0"
+      },
+      {
+        "file": "images/leccinum-aurantiacum-2.jpg",
+        "source_title": "File:0 Bolet orangé - Leccinum aurantiacum - Havré (3).JPG",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/95/0_Bolet_orang%C3%A9_-_Leccinum_aurantiacum_-_Havr%C3%A9_%283%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  "leccinum-scabrum": {
+    "name": "Leccinum scabrum",
+    "images": [
+      {
+        "file": "images/leccinum-scabrum-1.jpg",
+        "source_title": "File:2007-10-13 Leccinum scabrum (Bull.) Gray 12300.jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/60/2007-10-13_Leccinum_scabrum_%28Bull.%29_Gray_12300.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "images/leccinum-scabrum-2.jpg",
+        "source_title": "File:2007-10-13 Leccinum scabrum (Bull.) Gray 12300 crop.jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/33/2007-10-13_Leccinum_scabrum_%28Bull.%29_Gray_12300_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  "suillus-luteus": {
+    "name": "Suillus luteus",
+    "images": [
+      {
+        "file": "images/suillus-luteus-1.jpg",
+        "source_title": "File:2005-09-12 Suillus luteus cropped.jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/2005-09-12_Suillus_luteus_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "images/suillus-luteus-2.jpg",
+        "source_title": "File:2007-10-17 Suillus luteus (L.) Roussel 6983.jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/95/2007-10-17_Suillus_luteus_%28L.%29_Roussel_6983.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  "suillus-granulatus": {
+    "name": "Suillus granulatus",
+    "images": [
+      {
+        "file": "images/suillus-granulatus-1.jpg",
+        "source_title": "File:2004-09-07 Suillus granulatus.jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/2004-09-07_Suillus_granulatus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "images/suillus-granulatus-2.jpg",
+        "source_title": "File:2007-07-03 Suillus granulatus tubes.jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/2007-07-03_Suillus_granulatus_tubes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  "suillus-bovinus": {
+    "name": "Suillus bovinus",
+    "images": [
+      {
+        "file": "images/suillus-bovinus-1.jpg",
+        "source_title": "File:1431. Suillus bovinus 070913.jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/1431._Suillus_bovinus_070913.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "images/suillus-bovinus-2.jpg",
+        "source_title": "File:Lukas Large - Suillus bovinus - Bovine Bolete pores (54874177465).jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Lukas_Large_-_Suillus_bovinus_-_Bovine_Bolete_pores_%2854874177465%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "imleria-badia": {
+    "name": "Imleria badia",
+    "images": [
+      {
+        "file": "images/imleria-badia-2.jpg",
+        "source_title": "File:Boletus badius stem.jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Boletus_badius_stem.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "via Wikimedia Commons"
+      }
+    ]
+  },
+  "cantharellus-cibarius": {
+    "name": "Cantharellus cibarius",
+    "images": [
+      {
+        "file": "images/cantharellus-cibarius-1.jpg",
+        "source_title": "File:2007-07-14 Cantharellus cibarius cropped.jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/2007-07-14_Cantharellus_cibarius_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "file": "images/cantharellus-cibarius-2.jpg",
+        "source_title": "File:Botanical Garden Gothenburg and Anggårdsbergen 13.08.2017 Chanterelle - Cantharellus cibarius (37248583152).jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Botanical_Garden_Gothenburg_and_Angg%C3%A5rdsbergen_13.08.2017_Chanterelle_-_Cantharellus_cibarius_%2837248583152%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 2.0"
+      }
+    ]
+  },
+  "craterellus-tubaeformis": {
+    "name": "Craterellus tubaeformis",
+    "images": [
+      {
+        "file": "images/craterellus-tubaeformis-1.jpg",
+        "source_title": "File:(Craterellus tubaeformis 4) - Flickr - Tero Karppinen.jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/%28Craterellus_tubaeformis_4%29_-_Flickr_-_Tero_Karppinen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY 2.0"
+      },
+      {
+        "file": "images/craterellus-tubaeformis-2.jpg",
+        "source_title": "File:2009-10-07 Craterellus tubaeformis Leotia lubrica.jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/2009-10-07_Craterellus_tubaeformis_Leotia_lubrica.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  "lactarius-deliciosus": {
+    "name": "Lactarius deliciosus",
+    "images": [
+      {
+        "file": "images/lactarius-deliciosus-1.jpg",
+        "source_title": "File:2009-09-28 Lactarius deliciosus.jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/2009-09-28_Lactarius_deliciosus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY 2.0"
+      },
+      {
+        "file": "images/lactarius-deliciosus-2.jpg",
+        "source_title": "File:2010-12-09 Lactarius deliciosus gills 60530.jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/2010-12-09_Lactarius_deliciosus_gills_60530.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  "lactarius-resimus": {
+    "name": "Lactarius resimus",
+    "images": [
+      {
+        "file": "images/lactarius-resimus-2.jpg",
+        "source_title": "File:Lactarius resimus.jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Lactarius_resimus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "via Wikimedia Commons"
+      }
+    ]
+  },
+  "lactarius-torminosus": {
+    "name": "Lactarius torminosus",
+    "images": [
+      {
+        "file": "images/lactarius-torminosus-1.jpg",
+        "source_title": "File:Lactarius torminosus fungus in forest.jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Lactarius_torminosus_fungus_in_forest.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "via Wikimedia Commons"
+      }
+    ]
+  },
+  "russula-aeruginea": {
+    "name": "Russula aeruginea",
+    "images": [
+      {
+        "file": "images/russula-aeruginea-2.jpg",
+        "source_title": "File:2005-08-18 Russula aeruginea 14354.jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/2005-08-18_Russula_aeruginea_14354.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "via Wikimedia Commons"
+      }
+    ]
+  },
+  "armillaria-mellea": {
+    "name": "Armillaria mellea",
+    "images": [
+      {
+        "file": "images/armillaria-mellea-1.jpg",
+        "source_title": "File:1955. Pseudohylesinus grandis egg galleries on wood of Pacific silver fir and mycelium of Armillaria mellea. Baker River District, Mt. Baker National Forest. Washington. (34741043491).jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/1955._Pseudohylesinus_grandis_egg_galleries_on_wood_of_Pacific_silver_fir_and_mycelium_of_Armillaria_mellea._Baker_River_District%2C_Mt._Baker_National_Forest._Washington._%2834741043491%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "Public domain"
+      },
+      {
+        "file": "images/armillaria-mellea-2.jpg",
+        "source_title": "File:Armillaria mellea (Honey Fungus, D= Honiggelber Hallimasch, NL= Echte honingzwam) white spores and causes white rot. Easily recognises at the yellow underside of the ring and the absence of scales at the cap - panoramio.jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Armillaria_mellea_%28Honey_Fungus%2C_D%3D_Honiggelber_Hallimasch%2C_NL%3D_Echte_honingzwam%29_white_spores_and_causes_white_rot._Easily_recognises_at_the_yellow_underside_of_the_ring_and_the_absence_of_scales_at_the_cap_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY 3.0"
+      }
+    ]
+  },
+  "hydnum-repandum": {
+    "name": "Hydnum repandum",
+    "images": [
+      {
+        "file": "images/hydnum-repandum-1.jpg",
+        "source_title": "File:2012-08-29 Hydnum repandum L 256175.jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/72/2012-08-29_Hydnum_repandum_L_256175.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "images/hydnum-repandum-2.jpg",
+        "source_title": "File:Hedgehog Fungus Detail.JPG",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Hedgehog_Fungus_Detail.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "Public domain"
+      }
+    ]
+  },
+  "morchella-elata": {
+    "name": "Morchella elata",
+    "images": [
+      {
+        "file": "images/morchella-elata-2.jpg",
+        "source_title": "File:Morchella elata closeup.jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Morchella_elata_closeup.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "via Wikimedia Commons"
+      }
+    ]
+  },
+  "tylopilus-felleus": {
+    "name": "Tylopilus felleus",
+    "images": [
+      {
+        "file": "images/tylopilus-felleus-1.jpg",
+        "source_title": "File:2006-09-14 Tylopilus felleus crop.jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/2006-09-14_Tylopilus_felleus_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 2.5"
+      },
+      {
+        "file": "images/tylopilus-felleus-2.jpg",
+        "source_title": "File:2012-06-09 Tylopilus felleus (Bull.) P. Karst 226777.jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/2012-06-09_Tylopilus_felleus_%28Bull.%29_P._Karst_226777.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  "chalciporus-piperatus": {
+    "name": "Chalciporus piperatus",
+    "images": [
+      {
+        "file": "images/chalciporus-piperatus-1.jpg",
+        "source_title": "File:2006-09-10 Chalciporus piperatus 26645.jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/2006-09-10_Chalciporus_piperatus_26645.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "images/chalciporus-piperatus-2.jpg",
+        "source_title": "File:Chalciporus piperatus pores (8071973448).jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Chalciporus_piperatus_pores_%288071973448%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 2.0"
+      }
+    ]
+  },
+  "paxillus-involutus": {
+    "name": "Paxillus involutus",
+    "images": [
+      {
+        "file": "images/paxillus-involutus-1.jpg",
+        "source_title": "File:0006 Paxillus involutus (Copy).jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/0006_Paxillus_involutus_%28Copy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "file": "images/paxillus-involutus-2.jpg",
+        "source_title": "File:Champignon bottom.JPG",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Champignon_bottom.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "amanita-muscaria": {
+    "name": "Amanita muscaria",
+    "images": [
+      {
+        "file": "images/amanita-muscaria-1.jpg",
+        "source_title": "File:'Fly Agaric', Amanita muscaria var. muscaria.jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/%27Fly_Agaric%27%2C_Amanita_muscaria_var._muscaria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY 2.0"
+      },
+      {
+        "file": "images/amanita-muscaria-2.jpg",
+        "source_title": "File:12-10-21 Amanita muscaria 01.jpg",
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/12-10-21_Amanita_muscaria_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  }
+}
